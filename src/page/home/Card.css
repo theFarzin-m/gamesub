@@ -1,0 +1,39 @@
+.custom-card.card {
+  & * {
+    transition: all 0.6s;
+  }
+  & .card-img-overlay {
+    opacity: 0;
+    background-color: #ff5b00cc;
+  }
+
+  & .custom-card-details {
+    background-color: var(--secondary-color);
+    width: 100%;
+    bottom: -100px;
+  }
+
+  & .card-title {
+    top: -100px;
+  }
+  & .custom-price-tag {
+    background-color: var(--secondary-color);
+  }
+}
+
+.card:hover {
+  & .card-img-overlay {
+    opacity: 1;
+    height: auto;
+  }
+
+  & .card-img {
+    transform: scale(1.1, 1.1);
+  }
+  & .custom-card-details {
+    bottom: 0;
+  }
+  & .card-title {
+    top: 30%;
+  }
+}

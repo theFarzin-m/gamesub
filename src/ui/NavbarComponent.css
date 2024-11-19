@@ -1,0 +1,27 @@
+@media screen and (min-width: 992px) {
+  .custom-translateY-brand {
+    transition: all 1s;
+    transform: translateY(40px);
+  }
+  .navbar-scroll .custom-translateY-brand {
+    transform: translateY(-50px) !important;
+  }
+  .navbar {
+    max-height: 100px;
+  }
+}
+
+.custom-wallet {
+  background-color: var(--primary-color);
+}
+
+.custom-translateY-brand {
+  transition: all 1s;
+  gap: 50px;
+}
+.navbar-scroll .custom-translateY-brand {
+  transform: translateY(-95px);
+}
+.navbar {
+  max-height: 80px;
+}

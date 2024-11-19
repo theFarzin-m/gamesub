@@ -1,0 +1,159 @@
+#profile {
+  & .custom-sidebar {
+    min-height: 100vh;
+  }
+  .custom-profile-image {
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  .table {
+    & thead tr th {
+      background-color: var(--secondary-color);
+    }
+  }
+
+  /* Dashboard -start- */
+
+  & .custom-recent-action .card {
+    max-width: 16rem;
+    & ul {
+      min-height: 204px;
+    }
+    box-shadow: 0 0 5px 0px #787878;
+    background: var(--secondary-color);
+    background: radial-gradient(
+        circle,
+        var(--primary-color),
+        #de5d15 30%,
+        rgba(255, 91, 0, 0.226) 0%
+      ),
+      radial-gradient(
+        circle at 40px 40px,
+        var(--primary-color),
+        #de5d15 30%,
+        var(--secondary-color) 0%
+      ),
+      radial-gradient(
+        circle at 600px 200px,
+        var(--primary-color),
+        #de5d15 10%,
+        var(--secondary-color) 0%
+      ),
+      radial-gradient(
+        circle at 800px 100px,
+        var(--primary-color),
+        #de5d15 10%,
+        var(--secondary-color) 0%
+      ),
+      radial-gradient(
+        circle at 700px 500px,
+        var(--primary-color),
+        #de5d15 2%,
+        rgba(255, 91, 0, 0.123) 0%
+      ),
+      radial-gradient(
+        circle at 200px 400px,
+        var(--primary-color),
+        #de5d15 1%,
+        var(--secondary-color) 0%
+      ),
+      radial-gradient(
+        circle at 300px 700px,
+        var(--primary-color),
+        #de5d15 15%,
+        var(--secondary-color) 0%
+      ),
+      radial-gradient(
+        circle at 900px 500px,
+        var(--primary-color),
+        #de5d15 20%,
+        var(--secondary-color) 0%
+      ),
+      radial-gradient(
+        circle at 650px 400px,
+        var(--primary-color),
+        #de5d15 10%,
+        var(--secondary-color) 0%
+      ),
+      radial-gradient(
+        circle at 600px 600px,
+        var(--primary-color),
+        #de5d15 1%,
+        rgba(255, 91, 0, 0.959) 0%
+      );
+
+    & .list-item {
+      border-bottom: 1px dashed #eee;
+    }
+
+    .card-title {
+      max-width: 150px;
+      aspect-ratio: 1/1;
+    }
+    & .custom-more-recently {
+      animation: upDown 1s infinite alternate;
+    }
+  }
+
+  & .custom-recent-action.row > div:nth-child(1) .card .card-title {
+    background-color: #dcfce7;
+  }
+  & .custom-recent-action.row > div:nth-child(2) .card .card-title {
+    background-color: #100050;
+  }
+  .custom-recent-action.row > .col:nth-child(3) .card-title {
+    background-color: #333;
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+/* Dashboard -end- */
+
+/* download -start- */
+#downloads {
+  & .btn {
+    background-color: #a46497 !important;
+  }
+}
+/* download -end- */
+
+/* wallet -start- */
+#wallet {
+  tfoot {
+    & a {
+      text-decoration: none;
+      color: var(--primary-color) !important;
+    }
+    & span {
+      color: var(--primary-color);
+    }
+  }
+}
+/* wallet -end- */
+
+/* edite prifile -start- */
+#edite-profile {
+  & fieldset {
+    border-color: #787878 !important;
+    margin-top: 40px;
+    & legend {
+      margin-top: -50px;
+      & span {
+        background-color: #fff;
+      }
+    }
+  }
+}
+/* edite prifile -end- */

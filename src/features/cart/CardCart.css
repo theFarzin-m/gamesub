@@ -1,0 +1,24 @@
+.custom-cart-card {
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+  & .card-body .btn:hover {
+    background-color: #f8f9fa;
+    color: var(--secondary-color);
+    border: none;
+    transition: all 0.2s;
+  }
+  & .custom-card-price {
+    color: var(--primary-color);
+  }
+  & .custom-quantity-button {
+    border-color: var(--secondary-color) !important;
+
+    & > button:disabled {
+      border: none;
+      background-color: inherit;
+      color: var(--text-scondary);
+    }
+  }
+}

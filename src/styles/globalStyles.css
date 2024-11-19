@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  --primary-color: #ff8600;
+  --text-color: #787878;
+  --bs-secondary-color: #787878;
+  --secondary-color: #ff5b00;
+  --bs-tooltip-opacity: 1 !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f8f9fa;
+  box-shadow: inset 0 0 3px 0 #aaa;
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  opacity: 0.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Titillium Web", sans-serif;
+}
+
+a.active {
+  color: var(--secondary-color) !important;
+  border: none;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+.fs-7 {
+  font-size: 0.8rem !important;
+}
+.fs-0 {
+  font-size: 3.3rem;
+}
+
+.custom-required::before {
+  content: "*";
+  color: red;
+  padding: 0 4px;
+}
+
+.custom-dir-ltr {
+  direction: ltr;
+}
+
+/* bootstrap changes -start- */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+
+  &:hover,
+  &:active {
+    background-color: #fff !important;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+  }
+  &:active {
+    box-shadow: inset 0 0 2px 0 #00000099;
+  }
+}
+
+.bg-secondary-custom {
+  background-color: var(--secondary-color);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.text-secondary {
+  color: var(--bs-secondary-color) !important;
+}
+
+.tooltip {
+  --bs-tooltip-opacity: 1 !important;
+}
+
+/* Bootstrap changes -end- */
+
+
+/* Footer -start- */
+.footer {
+  background-color: #dbdee0;
+  & .custom-footer-top {
+    background-color: #dbdee0;
+    height: 150px;
+  }
+  & .custom-footer-bottom {
+    border-top: 1px solid #c5cdd1;
+  }
+}
+/* Footer -end- */
+
+/* tooltip -start- */
+#button-tooltip {
+  z-index: 1;
+}
+/* tooltip -end- */
+
+/* cart button navbar -start- */
+#custom-num-tag {
+background-color: var(--secondary-color);
+color: #fff;
+border-radius: 12px;
+width: 20px;
+height: 20px;
+transform: translateX(15px);
+}
+/* cart button navbar -end- */

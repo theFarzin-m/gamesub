@@ -1,0 +1,75 @@
+#details {
+  & .custom-image-place {
+    height: 300px;
+    width: 100%;
+    background-image: url(/img/brand.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  & .card {
+    box-shadow: 0 0 6px 0 #00000055;
+  }
+  & .custom-price {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+  }
+
+  & .custom-creators {
+    width: 100%;
+    height: 100%;
+    /* Add your background pattern here */
+    --s: 25px; /* control the size */
+    --c1: var(--secondary-color);
+    --c2: #fff;
+
+    --c: #0000 71%, var(--c1) 0 79%, #0000 0;
+    --_s: calc(var(--s) / 2) / calc(2 * var(--s)) calc(2 * var(--s));
+    background: linear-gradient(45deg, var(--c)) calc(var(--s) / -2) var(--_s),
+      linear-gradient(135deg, var(--c)) calc(var(--s) / 2) var(--_s),
+      radial-gradient(var(--c1) 35%, var(--c2) 37%) 0 0 / var(--s) var(--s);
+
+    & .custom-creator-text {
+      background-color: #ffffffcc;
+    }
+  }
+
+  & #details-tap {
+    margin: 100px auto;
+    & .nav {
+      border-color: var(--primary-color);
+    }
+    & .nav-link {
+      color: var(--text-color);
+    }
+    & .nav-link.active {
+      border-color: var(--primary-color);
+      margin-top: 1px;
+      color: var(--secondary-color);
+    }
+
+    & .custom-details-tab {
+      border-color: var(--primary-color) !important;
+      box-shadow: 0 0 4px 0 #00000033;
+
+      &:has(#image-tab) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+    }
+  }
+
+  & .custom-quantity-button {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #details-tap .nav-link {
+    font-size: 0.9rem !important;
+    padding: 5px 10px ;
+  }
+}

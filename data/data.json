@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Red Dead Redemption",
+    "price": 500000,
+    "mainImage": "/img/games/زیرنویس-فارسی-بازی-رد-دد-ریدمپشن-red-dead-redemption-570x570.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Elden Ring",
+    "price": 400000,
+    "mainImage": "/img/games/elden-ring-main.jpg",
+    "images": [
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-الدن-رینگ-elden-ring-05-570x321.jpg"
+      },
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-الدن-رینگ-elden-ring-06-570x321.jpg"
+      },
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-الدن-رینگ-elden-ring-07-570x321.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "فارسی ساز کامل GTA V",
+    "price": 700000,
+    "mainImage": "/img/games/grand-theft-auto-v.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Ghost of Tsushima",
+    "price": 500000,
+    "mainImage": "/img/games/زیرنویس-فارسی-بازی-شبح-سوشیما-Ghost-of-Tsushima-570x570.jpg"
+  },
+  {
+    "id": 5,
+    "title": "God of War Ragnarok",
+    "price": 600000,
+    "mainImage": "/img/games/زیرنویس-فارسی-بازی-خدای-جنگ-رگناروک-God-of-War-Ragnarok-570x570.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Max Payne 3",
+    "price": 0,
+    "mainImage": "/img/games/maxpayne3_deathmatch_1920x1080-min-e1529679796286-570x570.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Bioshock Infinite + ALL DLC’s",
+    "price": 380000,
+    "mainImage": "/img/games/BioShock-Infinite.jpg"
+  },
+  {
+    "id": 8,
+    "title": "The Last of Us Part I",
+    "price": 450000,
+    "mainImage": "/img/games/زیرنویس-فارسی-بازی-the-last-of-us-2-01-570x570.jpg",
+    "images": [
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-the-last-of-us-part-i-01-570x321.jpg"
+      },
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-the-last-of-us-part-i-02.jpg"
+      },
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-the-last-of-us-part-i-03.jpg"
+      },
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-the-last-of-us-part-i-04-570x321.jpg"
+      },
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-the-last-of-us-part-i-05-570x321.jpg"
+      },
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-the-last-of-us-part-i-06-570x321.jpg"
+      },
+      {
+        "image": "/img/games/زیرنویس-فارسی-بازی-the-last-of-us-part-i-07-570x321.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "فارسی ساز کامل Cyberpunk 2077",
+    "price": 890000,
+    "mainImage": "/img/games/cyberpunk-2077.jpg"
+  }
+]
