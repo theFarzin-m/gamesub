@@ -11,9 +11,12 @@ export default function useOutsideClick(handeler, listenCapturing = true) {
     }
 
     document.addEventListener("click", handelCick, listenCapturing);
+    document.addEventListener("touchstart", handelCick, listenCapturing);
 
-    return () =>
+    return () => {
       document.removeEventListener("click", handelCick, listenCapturing);
+      document.removeEventListener("touchstart", handelCick, listenCapturing);
+    };
   }, [handeler, listenCapturing]);
 
   return ref;

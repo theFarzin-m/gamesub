@@ -1,0 +1,4 @@
+#collapse {
+  box-shadow: 5px 0 10px #333;
+  width: var(--collapse-width);
+}

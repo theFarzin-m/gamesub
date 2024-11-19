@@ -81,7 +81,7 @@ export default function Informations({ data }) {
   };
 
   return (
-    <div className="container pt-4">
+    <div className="container-xl pt-4">
       <div className="row row-cols-1 row-cols-md-2">
         <div className="col col-md-4 custom-add-cart mb-4 mb-md-0">
           <div className="card w-100">

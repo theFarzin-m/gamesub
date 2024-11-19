@@ -6,6 +6,7 @@
   --bs-secondary-color: #787878;
   --secondary-color: #ff5b00;
   --bs-tooltip-opacity: 1 !important;
+  --collapse-width: 300px;
 }
 
 * {
@@ -94,6 +95,24 @@ a.active {
 
 /* Bootstrap changes -end- */
 
+/* collaps -start- */
+#collapse-main.open {
+  right: 0;
+  min-width: var(--collapse-width);
+}
+
+#collapse-main {
+  right: -400px;
+  position: relative;
+  width: 0px !important;
+  transition: all 0.5s;
+  z-index: 9999999;
+}
+
+#main {
+  min-width: 100vw;
+}
+/* collaps -end- */
 
 /* Footer -start- */
 .footer {
@@ -116,11 +135,11 @@ a.active {
 
 /* cart button navbar -start- */
 #custom-num-tag {
-background-color: var(--secondary-color);
-color: #fff;
-border-radius: 12px;
-width: 20px;
-height: 20px;
-transform: translateX(15px);
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 12px;
+  width: 20px;
+  height: 20px;
+  transform: translateX(15px);
 }
 /* cart button navbar -end- */
