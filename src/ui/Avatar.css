@@ -1,0 +1,7 @@
+.custom-profile-image {
+    border: 2px solid var(--primary-color);
+    overflow: hidden;
+    & img {
+      object-fit: cover;
+    }
+}

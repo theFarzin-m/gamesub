@@ -2,8 +2,16 @@ import React from "react";
 import CardShop from "./CardShop";
 
 import data from "../../../data/data.json";
+import { useSearchParams } from "react-router-dom";
 
 export default function Shop() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const query = searchParams.get("q")?.toLowerCase();
+  let datas = data;
+  if (query) {
+    datas = data.filter((d) => d.title.toLowerCase().includes(query));
+  }
+
   return (
     <div className="container my-4">
       <div className="d-flex justify-content-between align-items-center my-2">
@@ -22,13 +30,19 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-4">
-        {data.map((d) => (
-          <div className="col" key={d.id}>
-            <CardShop data={d} />
-          </div>
-        ))}
-      </div>
+      {datas.length ? (
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-4">
+          {datas.map((d) => (
+            <div className="col" key={d.id}>
+              <CardShop data={d} />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="d-flex justify-content-center align-items-center">
+          <div className="fs-2">چیزی پیدا نشد</div>
+        </div>
+      )}
       <div className="d-flex justify-content-center mt-4 py-4"></div>
     </div>
   );

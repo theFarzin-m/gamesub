@@ -1,6 +1,3 @@
-collapse navbar open like site just check phone version
-search box
-commnets
 log in/sign in page
 log out
 error pages

@@ -10,12 +10,10 @@ const collapseSlice = createSlice({
   reducers: {
     open(state) {
       state.isOpen = true;
-      console.log("open");
       document.getElementById("collapse-main")?.classList.add("open");
     },
     close(state) {
       state.isOpen = false;
-      console.log("close");
       document.getElementById("collapse-main")?.classList.remove("open");
     },
   },

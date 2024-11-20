@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 
 import "./Profile.css";
 import { HiOutlineArrowRightOnRectangle } from "react-icons/hi2";
+import Avatar from "../../ui/Avatar";
 
 export default function Profile() {
   return (
@@ -15,15 +16,7 @@ export default function Profile() {
         </div>
         <div className="col p-4">
           <div className="d-flex flex-nowrap mb-4">
-            <div className="custom-profile-image d-flex justify-content-center align-items-center rounded-circle border border-secondary-subtle">
-              <img
-                src="/img/default-avatar.jpg"
-                alt="profile image"
-                className="overflow-hidden"
-                width="111%"
-                height="111%"
-              />
-            </div>
+            <Avatar  width="200px" />
             <div className="mx-4 mt-4 pt-2">
               <div className="h2">user name</div>
               <div className="h4 my-3">email@email.com</div>

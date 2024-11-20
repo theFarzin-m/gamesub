@@ -2,26 +2,14 @@ import React from "react";
 
 import CartButtonNavbart from "../features/cart/CartButtonNavbart";
 import { Link, NavLink } from "react-router-dom";
+import Searchform from "./Searchform";
 
 export default function NavLinks() {
   return (
     <>
-      <form className="d-flex d-lg-none" role="search">
-        <div className="input-group rounded-0 rounded-start border">
-          <input
-            className="form-control rounded-0 rounded-start border-0"
-            type="search"
-            placeholder="جستجو"
-            aria-label="Search"
-          />
-        </div>
-        <button
-          className="btn btn-primary me-2 rounded-0 rounded-end"
-          type="submit"
-        >
-          <i className="bi bi-search"></i>
-        </button>
-      </form>
+      <div className="d-flex d-lg-none justify-content-center align-items-center">
+        <Searchform />
+      </div>
       <hr className="d-lg-none" />
 
       <ul className="navbar-nav order-3 order-lg-1">
@@ -75,25 +63,9 @@ export default function NavLinks() {
           </Link>
         </li>
       </ul>
-      <form
-        className="d-none d-lg-flex order-1 my-lg-auto order-lg-2"
-        role="search"
-      >
-        <div className="input-group rounded-0 rounded-start border">
-          <input
-            className="form-control rounded-0 rounded-start border-0"
-            type="search"
-            placeholder="جستجو"
-            aria-label="Search"
-          />
-        </div>
-        <button
-          className="btn btn-primary me-2 rounded-0 rounded-end"
-          type="submit"
-        >
-          <i className="bi bi-search"></i>
-        </button>
-      </form>
+      <div className="d-none d-lg-flex justify-content-center align-items-center order-3">
+        <Searchform />
+      </div>
     </>
   );
 }
