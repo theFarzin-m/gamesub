@@ -9,7 +9,7 @@ export default function Downloads() {
             <th className="text-light" scope="col">
               محصول
             </th>
-            <th className="text-light text-nowrap" scope="col">
+            <th className="text-light" scope="col">
               دانلودهای باقی مونده
             </th>
             <th className="text-light" scope="col">

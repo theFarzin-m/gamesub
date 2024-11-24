@@ -35,10 +35,19 @@ export default function NavLinks() {
         <li className="nav-item">
           <NavLink
             className="nav-link d-flex flex-column align-items-center"
-            to="/profile/Dashboard"
+            to="/profile/dashbord"
           >
             <i className="bi bi-person fs-4"></i>
             <span className="fs-7">پروفایل</span>
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink
+            className="nav-link d-flex flex-column align-items-center"
+            to="/login"
+          >
+            <i className="bi bi-box-arrow-in-right fs-4"></i>
+            <span className="fs-7">ورود/ثبت‌نام</span>
           </NavLink>
         </li>
         <li className="nav-item">

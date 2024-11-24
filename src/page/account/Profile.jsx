@@ -11,12 +11,12 @@ export default function Profile() {
   return (
     <div id="profile" className="container-xxl">
       <div className="row">
-        <div className="col-3">
+        <div className="col-2 col-md-3 ps-0">
           <Sidebar />
         </div>
-        <div className="col p-4">
-          <div className="d-flex flex-nowrap mb-4">
-            <Avatar  width="200px" />
+        <div className="col p-md-4">
+          <div className="d-flex flex-wrap mb-4">
+            <Avatar width="200px" />
             <div className="mx-4 mt-4 pt-2">
               <div className="h2">user name</div>
               <div className="h4 my-3">email@email.com</div>

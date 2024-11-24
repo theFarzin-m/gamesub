@@ -1,3 +1,0 @@
-log in/sign in page
-log out
-error pages

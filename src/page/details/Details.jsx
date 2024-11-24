@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import data from "../../../data/data.json";
 
@@ -12,11 +12,17 @@ import CommentsTab from "./CommentsTab";
 import CardShop from "../Shop/CardShop";
 
 import "./Details.css";
+import NotFound from "../errorpages/NotFound";
 
 export default function Details() {
   const { id } = useParams();
   const [tab, setTab] = useState("setup-guide");
   const detail = data.filter((game) => game.id === Number(id));
+
+  if (detail.length <= 0) {
+    return <NotFound />;
+  }
+
   return (
     <>
       <div id="details">

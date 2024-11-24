@@ -3,6 +3,7 @@ import CardShop from "./CardShop";
 
 import data from "../../../data/data.json";
 import { useSearchParams } from "react-router-dom";
+import NotFound from "../errorpages/NotFound";
 
 export default function Shop() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -10,6 +11,10 @@ export default function Shop() {
   let datas = data;
   if (query) {
     datas = data.filter((d) => d.title.toLowerCase().includes(query));
+  }
+
+  if (datas.length <= 0) {
+    return <NotFound />;
   }
 
   return (
@@ -30,19 +35,13 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      {datas.length ? (
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-4">
-          {datas.map((d) => (
-            <div className="col" key={d.id}>
-              <CardShop data={d} />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div className="d-flex justify-content-center align-items-center">
-          <div className="fs-2">چیزی پیدا نشد</div>
-        </div>
-      )}
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-4">
+        {datas.map((d) => (
+          <div className="col" key={d.id}>
+            <CardShop data={d} />
+          </div>
+        ))}
+      </div>
       <div className="d-flex justify-content-center mt-4 py-4"></div>
     </div>
   );

@@ -15,7 +15,7 @@ export default function EditeProfile() {
           className="form-control mt-2"
           placeholder="نام"
           {...register("firstName", {
-            required: "This field is required",
+            required: "نام نمیتواند خالی باشد",
           })}
         />
         <label
@@ -84,7 +84,7 @@ export default function EditeProfile() {
             placeholder="گذرواژه قدیمی"
             {...register("password")}
           />
-          <label className="form-label w-100" htmlFor="email">
+          <label className="form-label w-100" htmlFor="password">
             گذرواژه پیشین (در صورتی که قصد تغییر ندارید خالی بگذارید)
           </label>
         </div>
@@ -97,7 +97,7 @@ export default function EditeProfile() {
             placeholder="گذرواژه جدید"
             {...register("newPassword")}
           />
-          <label className="form-label w-100" htmlFor="email">
+          <label className="form-label w-100" htmlFor="newPassword">
             گذرواژه جدید (در صورتی که قصد تغییر ندارید خالی بگذارید)
           </label>
         </div>
@@ -110,7 +110,7 @@ export default function EditeProfile() {
             placeholder="تکرار گذرواژه جدید"
             {...register("confirmation")}
           />
-          <label className="form-label w-100" htmlFor="email">
+          <label className="form-label w-100" htmlFor="confirmation">
             تکرار گذرواژه جدید
           </label>
         </div>

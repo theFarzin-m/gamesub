@@ -28,7 +28,9 @@ export default function Wallet() {
         </p>
       </div>
       <hr />
-      <div id="wallet-history" className="fs-4 mb-4 ">تاریخچه</div>
+      <div id="wallet-history" className="fs-4 mb-4 ">
+        تاریخچه
+      </div>
 
       <div className="table-responsive">
         <table className="table border">
@@ -77,15 +79,16 @@ export default function Wallet() {
             </tr>
           </tbody>
           <tfoot>
-            <td colSpan={4} className="py-2">
-            <Link to="http://localhost:5173/profile/wallet#wallet-history?print=transactions">
-
-              <span className="mx-2">
-                <HiOutlinePrinter color="inherit" />
-              </span>
-              چاپ رسید
-            </Link>
-            </td>
+            <tr>
+              <td colSpan={4} className="py-2">
+                <Link to="http://localhost:5173/profile/wallet#wallet-history?print=transactions">
+                  <span className="mx-2">
+                    <HiOutlinePrinter color="inherit" />
+                  </span>
+                  چاپ رسید
+                </Link>
+              </td>
+            </tr>
           </tfoot>
         </table>
       </div>

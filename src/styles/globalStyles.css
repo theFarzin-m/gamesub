@@ -93,6 +93,10 @@ a.active {
   --bs-tooltip-opacity: 1 !important;
 }
 
+.form-floating>label {
+  transition: all 0.5s !important;
+}
+
 /* Bootstrap changes -end- */
 
 /* collaps -start- */

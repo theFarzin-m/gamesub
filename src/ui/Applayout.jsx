@@ -7,10 +7,10 @@ import Footer from "./Footer";
 import LoadingScreen from "./LoadingScreen";
 import Collapse from "../features/collapse/Collapse";
 import { useSelector } from "react-redux";
+import OnPageChange from "./OnPageChange";
 
 export default function Applayout() {
   const [isLoading, setISLoading] = useState(true);
-  const { isOpen } = useSelector((s) => s.collapse);
 
   setTimeout(() => setISLoading(false), 1000);
 

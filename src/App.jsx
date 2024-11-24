@@ -17,6 +17,8 @@ import Orders from "./page/account/Orders";
 import Downloads from "./page/account/Downloads";
 import Wallet from "./page/account/Wallet";
 import SerialNumbers from "./page/account/SerialNumbers";
+import NotFound from "./page/errorpages/NotFound";
+import OnPageChange from "./ui/OnPageChange";
 
 function App() {
   useEffect(() => {
@@ -29,20 +31,22 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
+        <OnPageChange />
         <Routes>
+          <Route path="login" element={<Login />} />
           <Route element={<Applayout />}>
             <Route path="/" element={<Home />} />
             <Route path="shop/:id" element={<Details />} />
             <Route path="shop/" element={<Shop />} />
             <Route path="profile" element={<Profile />}>
-              <Route path="dashboard" element={<Dashboard />} />
+              <Route path="dashbord" element={<Dashboard />} />
               <Route path="orders" element={<Orders />} />
               <Route path="downloads" element={<Downloads />} />
               <Route path="serial-numbers" element={<SerialNumbers />} />
               <Route path="wallet" element={<Wallet />} />
               <Route path="edite" element={<EditeProfile />} />
             </Route>
-            <Route path="login" element={<Login />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>

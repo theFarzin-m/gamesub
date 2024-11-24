@@ -149,3 +149,8 @@
   }
 }
 /* edite prifile -end- */
+@media screen and (max-width: 768px) {
+  .table * {
+    padding: 4px !important;
+  }
+}

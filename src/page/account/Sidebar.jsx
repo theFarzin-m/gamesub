@@ -3,7 +3,6 @@ import React from "react";
 import {
   HiArrowDownTray,
   HiOutlineChartPie,
-  HiOutlineClock,
   HiOutlineCreditCard,
   HiOutlineDocumentText,
   HiOutlineKey,
@@ -16,39 +15,39 @@ export default function Sidebar() {
     <div className="custom-sidebar bg-light d-flex flex-column h-100 border-end ">
       <ul className="list-unstyled p-3 pe-0">
         <li className="list-item mb-2">
-          <NavLink className="btn fs-5 px-0" to="dashboard">
+          <NavLink className="btn fs-5 px-0" to="dashbord">
             <HiOutlineChartPie className="fs-4" />
-            <span className="mx-2">داشبورد</span>
+            <span className="mx-2 d-none d-md-inline">داشبورد</span>
           </NavLink>
         </li>
         <li className="list-item mb-2">
           <NavLink className="btn fs-5 px-0" to="orders">
             <HiOutlineDocumentText className="fs-4" />
-            <span className="mx-2">سفارشات</span>
+            <span className="mx-2 d-none d-md-inline">سفارشات</span>
           </NavLink>
         </li>
         <li className="list-item my-2">
           <NavLink className="btn fs-5 px-0" to="downloads">
             <HiArrowDownTray className="fs-4" />
-            <span className="mx-2">دانلودها</span>
+            <span className="mx-2 d-none d-md-inline">دانلودها</span>
           </NavLink>
         </li>
         <li className="list-item my-2">
           <NavLink className="btn fs-5 px-0" to="serial-numbers">
             <HiOutlineKey className="fs-4" />
-            <span className="mx-2">شماره‌سریال‌ها</span>
+            <span className="mx-2 d-none d-md-inline">شماره‌سریال‌ها</span>
           </NavLink>
         </li>
         <li className="list-item my-2">
           <NavLink className="btn fs-5 px-0" to="wallet">
             <HiOutlineCreditCard className="fs-4" />
-            <span className="mx-2">شارژکیف‌‌پول</span>
+            <span className="mx-2 d-none d-md-inline">شارژکیف‌‌پول</span>
           </NavLink>
         </li>
         <li className="list-item my-2">
           <NavLink className="btn fs-5 px-0" to="edite">
             <HiOutlinePencilSquare className="fs-4" />
-            <span className="mx-2">ویرایش‌حساب</span>
+            <span className="mx-2 d-none d-md-inline">ویرایش‌حساب</span>
           </NavLink>
         </li>
       </ul>
