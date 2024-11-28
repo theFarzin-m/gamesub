@@ -26,7 +26,7 @@ export default function Informations({ data }) {
 
     // @ts-ignore
     const end = scroller.offsetHeight - pin.offsetHeight - 50;
-    scrollY = window.scrollY;
+    scrollY = window.pageYOffset;
     if (scrollY <= end) {
       // @ts-ignore
       pin.style.transform = `translateY(${scrollY}px)`;

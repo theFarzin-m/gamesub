@@ -1,4 +1,5 @@
 .custom-cart-card {
+  max-width: 18rem;
   & a {
     color: inherit;
     text-decoration: none;

@@ -8,19 +8,23 @@ export default function Cart() {
 
   if (!cart.length) {
     return (
-      <div className="d-flex justify-content-center align-items-center">
-        <div className="h1">خالیه</div>
+      <div className="custom-cart-place">
+        <div className="d-flex justify-content-center align-items-center">
+          <div className="h1">خالیه</div>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="row row-cols-1 row-cols-md-3 g-2">
-      {cart.map((game) => (
-        <div className="col p-0" key={game.id}>
-          <CardCart data={game} />
-        </div>
-      ))}
+    <div className="custom-cart-place">
+      <div className="row row-cols-1 row-cols-md-2 g-2">
+        {cart.map((game) => (
+          <div className="col p-0" key={game.id}>
+            <CardCart data={game} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
