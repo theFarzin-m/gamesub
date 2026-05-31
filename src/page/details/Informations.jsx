@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { formatCurrency } from "../../utility/helpers";
@@ -19,20 +19,6 @@ export default function Informations({ data }) {
   const { id, title, mainImage, price } = data[0];
   const isInCart = cart.filter((c) => c.id === id);
 
-  let scrollY = 0;
-  const scrollHandel = () => {
-    const pin = document.querySelector(".card");
-    const scroller = document.querySelector(".custom-information");
-
-    // @ts-ignore
-    const end = scroller.offsetHeight - pin.offsetHeight - 50;
-    scrollY = window.pageYOffset;
-    if (scrollY <= end) {
-      // @ts-ignore
-      pin.style.transform = `translateY(${scrollY}px)`;
-    }
-  };
-
   useEffect(() => {
     if (isInCart.length > 0 && !isLoading) {
       setQuantity(isInCart[0].quantity);
@@ -44,13 +30,6 @@ export default function Informations({ data }) {
     if (data[0].mainImage && imagePlace) {
       imagePlace.style.backgroundImage = `url(${mainImage})`;
     }
-    if (window.innerWidth > 768) {
-      document.addEventListener("scroll", scrollHandel);
-    }
-
-    return () => {
-      document.removeEventListener("scroll", scrollHandel);
-    };
   }, [isInCart]);
 
   const handelAddToCart = () => {
@@ -84,7 +63,13 @@ export default function Informations({ data }) {
     <div className="container-xl pt-4">
       <div className="row row-cols-1 row-cols-md-2">
         <div className="col col-md-4 custom-add-cart mb-4 mb-md-0">
-          <div className="card w-100">
+          <div
+            className="card w-100"
+            style={{
+              position: "sticky",
+              top: "100px",
+            }}
+          >
             <div className="custom-image-place" id="image-place"></div>
             <div className="card-body px-3">
               <h5 className="card-title">{title}</h5>

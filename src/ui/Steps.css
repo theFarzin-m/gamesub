@@ -25,7 +25,13 @@
     position: absolute;
     background-color: #c3cdd1;
     transition: all 1s;
-    margin-right: 9.5%;
+    margin-right: 7.8rem;
+    
+    /* @media screen and (min-width: 1400px) {
+      margin-right: 6.5%;
+      
+    } */
+
     &::before {
       background: inherit;
       width: 8px;
